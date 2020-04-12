@@ -12,6 +12,15 @@ public class Friend {
     private String id;
     private String SNO;
     private String address;
+    private double money;
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
 
     public String getAddress() {
         return address;
@@ -70,6 +79,7 @@ public class Friend {
                 ", id='" + id + '\'' +
                 ", SNO='" + SNO + '\'' +
                 ", address='" + address + '\'' +
+                ", money=" + money +
                 ", age=" + age +
                 '}';
     }
