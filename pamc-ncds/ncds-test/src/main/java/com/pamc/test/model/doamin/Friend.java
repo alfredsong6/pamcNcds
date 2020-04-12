@@ -9,6 +9,16 @@ package com.pamc.test.model.doamin;
 public class Friend {
     private String name;
     private String SNO;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     private Integer age;
     public String getName() {
         return name;
@@ -39,6 +49,7 @@ public class Friend {
         return "Friend{" +
                 "name='" + name + '\'' +
                 ", SNO='" + SNO + '\'' +
+                ", address='" + address + '\'' +
                 ", age=" + age +
                 '}';
     }
