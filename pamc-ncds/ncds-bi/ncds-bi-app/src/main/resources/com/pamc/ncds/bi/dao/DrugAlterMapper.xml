@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pamc.ncds.bi.dao.DrugAlterMapper">
+    <resultMap id="drugAlterDO" type="com.pamc.ncds.bi.domain.DrugAlterDO">
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userCode" jdbcType="VARCHAR"/>
+        <result column="drug_name" property="drugName" jdbcType="VARCHAR"/>
+        <result column="drug_code" property="drugCode" jdbcType="VARCHAR"/>
+        <result column="rule_code" property="ruleCode" jdbcType="VARCHAR"/>
+
+    </resultMap>
+    <select id="getDrugAlter" resultMap="drugAlterDO" parameterType="java.lang.Integer">
+        SELECT
+        da.name,
+            da.user_id,
+            da.drug_name,
+            da.drug_code,
+            da.rule_code
+        FROM
+            drug_alter da
+            LEFT JOIN drug_alter_rule dar ON da.rule_code = dar.rule_code
+        WHERE
+            dar.time=#{hour,jdbcType=INTEGER}
+    </select>
+</mapper>

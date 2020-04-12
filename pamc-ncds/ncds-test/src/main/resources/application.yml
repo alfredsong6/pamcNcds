@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ncds-test
+  datasource:
+    url: jdbc:mysql://192.168.31.245:3306/exe-1.1?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: sq66301
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.31.245:10100/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+server:
+  port: 10086
+
+ribbon:
+  eureka:
+    enabled: true
+
+mybatis:
+  mapper-locations: classpath*:com/pamc/ncds/bi/dao/*Mapper.xml

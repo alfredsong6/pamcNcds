@@ -1,0 +1,5 @@
+[
+  {"index":"1","code":"01","msg":"自定义异常类","type":"BaseException","commons":"com.pamc.ncds.exception.exception.BaseException","data":""},
+  {"index":"2","code":"02","msg":"参数校验失败","type":"MethodArgumentNotValidException","commons":"org.springframework.web.bind.MethodArgumentNotValidException","data":""},
+  {"index":"","code":"","msg":"","type":"","commons":"","data":""}
+]

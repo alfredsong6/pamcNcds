@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.pamc.ncds.exception.handler.ExceptionCatchHandler,\
+com.pamc.ncds.exception.handler.DefaultExceptionHandler
+

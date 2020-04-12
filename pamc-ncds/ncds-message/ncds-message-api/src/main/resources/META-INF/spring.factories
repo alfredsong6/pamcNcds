@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.pamc.ncds.message.service.MsgService,\
+com.pamc.ncds.message.aspect.ValidatedAspect
