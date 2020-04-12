@@ -8,6 +8,7 @@ package com.pamc.test.model.doamin;
  **/
 public class Friend {
     private String name;
+    private String other;
     private String id;
     private String SNO;
     private String address;
@@ -27,6 +28,14 @@ public class Friend {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getOther() {
+        return other;
+    }
+
+    public void setOther(String other) {
+        this.other = other;
     }
 
     public String getId() {
