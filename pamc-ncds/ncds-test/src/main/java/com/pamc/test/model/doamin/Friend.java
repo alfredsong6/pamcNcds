@@ -66,6 +66,8 @@ public class Friend {
     public String toString() {
         return "Friend{" +
                 "name='" + name + '\'' +
+                ", other='" + other + '\'' +
+                ", id='" + id + '\'' +
                 ", SNO='" + SNO + '\'' +
                 ", address='" + address + '\'' +
                 ", age=" + age +
