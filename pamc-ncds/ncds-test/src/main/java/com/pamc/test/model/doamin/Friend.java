@@ -9,7 +9,7 @@ package com.pamc.test.model.doamin;
 public class Friend {
     private String name;
     private String SNO;
-
+    private Integer age;
     public String getName() {
         return name;
     }
@@ -24,5 +24,13 @@ public class Friend {
 
     public void setSNO(String SNO) {
         this.SNO = SNO;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
