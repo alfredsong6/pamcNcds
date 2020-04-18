@@ -7,5 +7,5 @@ package com.pamc.test.model.doamin;
  * @Modified :
  **/
 public class Friend {
-    private String name;
+    private String xingming;
 }
