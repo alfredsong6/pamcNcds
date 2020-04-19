@@ -7,7 +7,7 @@ package com.pamc.test.model.doamin;
  * @Modified :
  **/
 public class Friend {
-    private String name;
+    private String nn;
     private String other;
     private String id;
     private String SNO;
@@ -32,11 +32,11 @@ public class Friend {
 
     private Integer age;
     public String getName() {
-        return name;
+        return nn;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nn = name;
     }
 
     public String getOther() {
@@ -74,7 +74,7 @@ public class Friend {
     @Override
     public String toString() {
         return "Friend{" +
-                "name='" + name + '\'' +
+                "name='" + nn + '\'' +
                 ", other='" + other + '\'' +
                 ", id='" + id + '\'' +
                 ", SNO='" + SNO + '\'' +
